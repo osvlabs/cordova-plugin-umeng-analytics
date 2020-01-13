@@ -17,6 +17,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import com.umeng.commonsdk.UMConfigure;
+import com.umeng.plugin.PGCommonSDK;
 
 
 //import com.umeng.analytics.dplus.UMADplus;
@@ -177,6 +178,10 @@ public class AnalyticsSDK extends CordovaPlugin {
             MobclickAgent.setFirstLaunchEvent(mContext, list);
 
             return true;
+        } else if (action.equals("initConfig")) {
+            String appKey = args.getString(0);
+            String channel = args.getString(1);
+            PGCommonSDK.init(this, appKey, channel, UMConfigure.DEVICE_TYPE_PHONE,"");
         }
         return false;
     }

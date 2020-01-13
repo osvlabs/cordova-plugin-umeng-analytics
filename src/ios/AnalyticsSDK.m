@@ -7,6 +7,7 @@
 
 #import "AnalyticsSDK.h"
 #import <UMAnalytics/MobClick.h>
+#import "UMCommonModule.h"
 
 
 @interface AnalyticsSDK ()
@@ -29,6 +30,14 @@
 #endif
 
 
+- (void)initConfig:(CDVInvokedUrlCommand*)command {
+    if (command.arguments.count < 1) {
+        return;
+    }
+    NSString *appKey = [command.arguments objectAtIndex:0];
+    NSString *channel = [command.arguments objectAtIndex:1];
+    [UMCommonModule initWithAppkey:appKey channel:channel];
+}
 
 
 - (void)onEvent:(CDVInvokedUrlCommand*)command {

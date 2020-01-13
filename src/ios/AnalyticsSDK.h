@@ -27,5 +27,5 @@
 - (void)getPreProperties:(CDVInvokedUrlCommand*)command;
 - (void)clearPreProperties:(CDVInvokedUrlCommand*)commands;
 - (void)setFirstLaunchEvent:(CDVInvokedUrlCommand*)command;
-
+- (void)initConfig:(CDVInvokedUrlCommand*)command;
 @end

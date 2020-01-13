@@ -155,6 +155,15 @@ var MobclickAgent = {
          */
          setFirstLaunchEvent : function(eventList) {
                cordova.exec(null, null, "AnalyticsSDK","setFirstLaunchEvent", [eventList]);
+         },
+
+         /**
+          * 
+          * @param {string} appKey  友盟的app key
+          * @param {string} channel 发布的频道
+          */
+         initUMeng: function (appKey, channel) {
+             cordova.exec(null, null, "AnalyticsSDK", "initConfig", [appKey, channel])
          }
 };
 
