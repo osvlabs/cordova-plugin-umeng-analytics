@@ -1,6 +1,6 @@
 {
-  "name": "cordova-plugin-umeng-analytics",
-  "version": "1.3.3",
+  "name": "@osvlabs/cordova-plugin-umeng-analytics",
+  "version": "1.3.4",
   "description": "a umeng analytics plugin",
   "cordova": {
     "id": "cordova-plugin-umeng-analytics",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shineabel/cordova-plugin-umeng-analytics.git"
+    "url": "https://github.com/osvlabs/cordova-plugin-umeng-analytics.git"
   },
   "keywords": [
     "umenganalytics,cordova,ios,android"
@@ -26,7 +26,7 @@
   "author": "shine",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shineabel/cordova-plugin-umeng-analytics/issues"
+    "url": "https://github.com/osvlabs/cordova-plugin-umeng-analytics/issues"
   },
-  "homepage": "https://github.com/shineabel/cordova-plugin-umeng-analytics/blob/master/README.md"
+  "homepage": "https://github.com/osvlabs/cordova-plugin-umeng-analytics/blob/master/README.md"
 }
