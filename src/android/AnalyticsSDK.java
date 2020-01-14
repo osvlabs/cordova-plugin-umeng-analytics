@@ -179,9 +179,9 @@ public class AnalyticsSDK extends CordovaPlugin {
 
             return true;
         } else if (action.equals("initConfig")) {
-            String appKey = args.getString(0);
-            String channel = args.getString(1);
-            PGCommonSDK.init(this, appKey, channel, UMConfigure.DEVICE_TYPE_PHONE,"");
+            // String appKey = args.getString(0);
+            // String channel = args.getString(1);
+            // PGCommonSDK.init(mContext, appKey, channel, UMConfigure.DEVICE_TYPE_PHONE,"");
         }
         return false;
     }
